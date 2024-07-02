@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty API</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rick & Morty</h1>
+        </header>
+        <div class="content">
+            <div class="image-container">
+                <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="Rick">
+            </div>
+            <div class="buttons-container">
+                <button id="getAllCharacters">Personajes</button>
+                <form id="filterForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    
+                    <label for="status">Status:</label>
+                    <input type="text" id="status" name="status">
+                    
+                    <label for="species">Species:</label>
+                    <input type="text" id="species" name="species">
+                    
+                    <label for="type">Type:</label>
+                    <input type="text" id="type" name="type">
+                    
+                    <label for="gender">Gender:</label>
+                    <input type="text" id="gender" name="gender">
+                    
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+            <div class="image-container">
+                <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="Morty">
+            </div>
+        </div>
+        <div id="characterList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
